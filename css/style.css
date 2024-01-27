@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+p{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700 !important;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    padding: 80px 0px;
+}
+:root{
+    --bg-color-1: #fbdb00;
+    --text-color: #555555;
+    --text-dark-color: #898989;
+    --bg-color-2: #f1f1f1;
+    --contact-bg: #010101
+}
+/* common code end */
+
+/* ---------------------------------------------------------------- */
+
+/* header area start */
+.navbar-brand img {
+    width: 96px;
+}
+.header{
+    height: 700px;
+    background-color: var(--bg-color-1);
+    overflow: hidden !important;
+}
+.item_one h3 {
+    font-size: 32px;
+}
+
+.item_one h5 {
+    font-size: 20px;
+    width: 375px;
+    font-weight: 500;
+}
+
+.item_one p {
+    font-size: 15px;
+    width: 390px;
+    line-height: 24px;
+    color: var(--text-color)
+}
+ul.icons li i {
+    font-size: 25px;
+}
+.carousel-indicators {
+    bottom: -45px;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+/* header area end */
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+/* tinyone area start */
+.sec_title p{
+    width: 600px;
+    font-size: 15px;
+    color: var(--text-color);
+}
+.service_info h4 {
+    font-size: 22px;
+}
+
+.service_info p {
+    font-size: 14px;
+    color: var(--text-dark-color);
+}
+/* tinyone area end */
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+/* contact area start */
+.contact{
+    background-color: var(--contact-bg);
+}
+.cn_title{
+    color: var(--bg-color-1);
+}
+.contact_form input {
+    width: 525px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.contact_form button {
+    width: 100px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--bg-color-1);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+ul.contact_media li i {
+    width: 34px;
+    height: 34px;
+    background: var(--bg-color-1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--contact-bg);
+}
+/* contact area end */
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+/* footer area start */
+.footer{
+    background-color: var(--contact-bg);
+    padding: 0px 0px 80px;
+}
+.address p{
+    color: var(--bg-color-2);
+}
+.address a{
+    color: var(--bg-color-2);
+}
+.address ul li a{
+    font-weight: 500 !important;
+}
+/* footer area end */
+.service_item.d-flex.gap-4 {
+    margin-bottom: 35px;
+}
+/* ---------------------------------------------------------------- */
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        height: 100%;
+    }
+    .item_one p {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .item_one h5 {
+        width: 100%;
+    }
+    
+    ul.icons {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .sec_title p {
+        width: 100%;
+    }
+    
+    .contact_form input {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .address {
+        margin-bottom: 20px;
+    }
+    
+    .footer_inner {
+        text-align: center;
+    }
+    .service_item.d-flex.gap-4 {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .item_two img {
+        width: 285px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .item_two {margin: auto;text-align: center;width: 100%;}
+    .service_item.d-flex.gap-4 {
+        margin-bottom: 35px;
+    }
+}
